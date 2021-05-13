@@ -1,0 +1,18 @@
+.crypto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.crypto a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crypto img{
+    object-fit: contain;
+    width:90%;
+}
+
+
+ 

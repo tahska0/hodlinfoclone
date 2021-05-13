@@ -1,0 +1,131 @@
+.navbar{
+    width: 100vw;
+    height: 120px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo curr telly";
+}
+
+.logo{
+    grid-area: logo;
+    padding-left: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.currency{
+    grid-area: curr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telegram{
+    grid-area: telly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo>img{
+    object-fit: contain;
+    width:80%;
+}
+.logo>p{
+    margin-top: -10px;
+    margin-left: 12px;
+    font-size: 16px;
+    font-family: Oswald, sans-serif;
+    color: #808080;
+}
+.logo>p>span{
+    color: rgb(61, 198, 193);
+}
+
+.currency>select{
+    background-color: #2e3241;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+}
+.currency>button{
+    background-color: #2e3241;
+    border:none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.telegram>a{
+    margin:0 15px;
+    height: 20px;
+    background-color: #3dc6c1;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.telegram>a>img{
+    height: 15px;
+    margin-right: 10px;
+}
+option{
+    padding:10px;
+    color: #191d28;
+    background-color: white;
+    cursor: pointer;
+}
+@media(max-width: 1000px){
+
+    .navbar{
+        height: 220px;
+    }
+    .telegram{
+        flex-wrap: wrap;
+    }
+ 
+}
+@media(max-width:900px){
+      .navbar{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+    "logo logo logo "
+    "curr curr curr"
+    "telly telly telly";
+    height: 230px;
+    }
+    .tele span{
+        font-size: 14px;
+    }
+    .logo>p{
+        text-align: center;
+        
+    }
+    .logo>img{
+        width: 30%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .currency>select{
+        margin: 0 10px;
+        padding: 10px;
+        border-radius: 8px;
+        border:none;
+    }
+    .telegram{
+        padding: 0;
+    }
+}
+
+    
+@media (max-width:955px) {
+    .currency{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

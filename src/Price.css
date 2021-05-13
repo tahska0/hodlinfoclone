@@ -1,0 +1,46 @@
+.price{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px;
+}
+.rate div{
+    text-align: center;
+}
+.rupees{
+    font-weight: 400;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+.percent{
+    font-weight: 400;
+    font-size: 40px;
+    color: #5dc7c2;;
+}
+.time{
+    text-align: center;
+    opacity: .45;
+    font-weight: 300;
+    font-size: 20px;
+}
+.best_price{
+    font-size: 28px;
+    text-align: center;
+    opacity: .45;
+    font-weight: 300;
+}
+
+@media(max-width:950px){
+    .percent{
+        font-size: 14px;
+    }
+    .time{
+        font-size: 10px;
+    }
+    .best_price{
+        font-size: 14px;
+    }
+    .rupees{
+        font-size: 20px;
+    }
+}

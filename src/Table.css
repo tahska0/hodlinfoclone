@@ -1,0 +1,53 @@
+.table{
+    margin: 5px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+  
+}
+table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    margin: 0;
+    text-align: center;
+    min-width: 1000px;
+    
+}
+
+th{
+    font-family: Oswald;
+    font-size: 24px;
+    opacity: .45;
+    letter-spacing: 1px;
+}
+table tbody tr{
+    background-color: #2e3241;
+
+}
+table tbody td{
+   
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+table tbody td:first-child{
+    border-radius: 10px 0 0 10px;
+}
+table tbody td:last-child{
+border-radius: 0 10px 10px 0;
+}
+
+.red{
+    color: #da5757;
+}
+@media(max-width:1000px){
+    .table{
+        overflow-x: scroll;
+    }
+}

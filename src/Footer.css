@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    width: 98%;
+    border-top: 2px solid #2e3241;
+    
+}
+.nothing{
+    width: 98%;
+    height: 47px;
+}
+.footer-one{
+    display: flex;
+    align-items: center;
+}
+.footer-text{
+    font-family: Oswald,sans-serif;
+    padding-right: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #888686;
+    
+}
+.footer-text span{
+    color: rgb(61, 198, 193);
+    cursor: pointer;
+}
